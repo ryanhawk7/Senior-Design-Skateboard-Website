@@ -1,0 +1,97 @@
+body {
+    background-image: url("pipe.jpg");
+    background-size: cover;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    text-align: center;
+	color: white;
+	background-attachment: fixed;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+header {
+	font-size: 69px;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	padding-right: 70px;
+	padding-left: 70px;
+}footer { 
+	font-size: 20px;
+	background-color: black;
+	padding-top: 25px;
+	padding-bottom: 100px;
+	margin-right: 0px;
+	margin-left: 0px;
+	width: 100%;
+ }
+ 
+ footer a{
+	float: right;
+	display: block;
+	color: #CCD1D1;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	transition: color .2s;
+	
+}
+ 
+ #projectTitle {
+	 background-color: rgba(23,32,42,.5);	/*Tansparent gray background*/
+	 color: white;
+	 border-radius: 25px;
+ }
+ 
+ #navigationBar {
+	overflow: hidden;
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	padding-right: 50px;
+}
+
+.main {
+	margin-top: 30px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	display: inline-block;
+}
+
+#navigationBar a {
+	float: right;
+	display: block;
+	color: #CCD1D1;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	transition: color .2s;
+}
+
+
+
+#navigationBar a:hover {
+	color: white;
+}
+
+footer a:hover {
+	color: white;
+}
+
+#csuLogo {
+	max-height: 100%;
+	max-width: 100%;
+	width: 500px;
+	height: 70px;
+	padding-top: 20px;
+	background: url('csulogo.png') no-repeat scroll center center transparent;
+	background-size: cover;
+	float: left;
+}
