@@ -1,65 +1,32 @@
-body {
-    background-image: url("pipe.jpg");
-    background-size: cover;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    text-align: center;
-	color: white;
-	background-attachment: fixed;
-	margin-right: 0px;
-	margin-left: 0px;
+* {
+	margin: 0;
+	padding: 0;
 }
-header {
-	font-size: 69px;
-	padding-top: 150px;
-	padding-bottom: 50px;
-	padding-right: 70px;
-	padding-left: 70px;
-}footer { 
-	font-size: 20px;
-	background-color: black;
-	padding-top: 25px;
-	padding-bottom: 100px;
-	margin-right: 0px;
-	margin-left: 0px;
-	width: 100%;
- }
- 
- footer a{
-	float: right;
-	display: block;
-	color: #CCD1D1;
-	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
-	text-decoration: none;
-	transition: color .2s;
-	
-}
- 
- #projectTitle {
-	 background-color: rgba(23,32,42,.5);	/*Tansparent gray background*/
-	 color: white;
-	 border-radius: 25px;
- }
- 
- #navigationBar {
+
+/* Navigation Bar */
+
+
+#navigationBar {
 	overflow: hidden;
 	position: fixed; 
 	top: 0; 
 	width: 100%; 
-	padding-right: 50px;
 }
 
-.main {
-	margin-top: 30px;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	display: inline-block;
+.navBarContent {
+	padding: 0 30px;
+}
+
+
+.csuLogo {
+	max-height: 100%;
+	max-width: 100%;
+	width: 500px;
+	height: 70px;
+	padding-top: 20px;
+	background: url('Photos/csulogo.png') no-repeat scroll center center transparent;
+	background-size: cover;
+	float: left;
 }
 
 #navigationBar a {
@@ -67,31 +34,172 @@ header {
 	display: block;
 	color: #CCD1D1;
 	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 30px 30px;
 	text-decoration: none;
 	transition: color .2s;
 }
 
+.hamburger {
+	display: none;
+	margin: 30px 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: green; 
+}
 
+#navigationBar .bar {
+	width: 35px;
+	height: 5px;
+	background-color: #CCD1D1;
+	transition: background-color .2s;
+	margin: 6px 0;
+	display: block;
+	border-radius: 2px;
+	z-index: -2;
+}
+
+.dropDown {
+	position: relative;
+	float: right;
+}
+
+.dropDownLinks {
+	display: none;
+	position: fixed;
+	top: 68px;
+	right: 0px;
+	min-width: 160px;
+	background-color: black;
+	border-radius: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropDownLinks a {
+	color: black;
+	padding: 12px 30px;
+	text-decoration: none;
+	display: block;
+}
 
 #navigationBar a:hover {
 	color: white;
 }
 
+.hamburger:hover .bar {
+	background-color: white;
+}
+
+.hamburger:hover ~ .dropDownLinks, .dropDownLinks:hover { 
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+
+/* Main Body */
+
+body {
+  background: linear-gradient(0deg, rgba(50,50,50,0.8) 50%, rgba(0,0,20,0.8) 100%), url("Photos/pipe.jpg");
+  background-size: auto 100%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+	color: white;
+	background-attachment: fixed;
+}
+
+header {
+	font-size: 69px;
+	padding: 250px 70px 50px;
+	margin: 40px auto 100px auto; 
+	color: white;
+	text-align: center;
+}
+
+
+h1 {
+	font-size: 40px;
+	margin: 40px auto 300px auto; 
+	color: white;
+	text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+	padding: 70px 10% 50px;
+	background-color: white;
+	color: black;
+	font-family: Helvetica, sans-serif;
+	text-align: justify;
+	letter-spacing: 1.5px;
+	font-weight: lighter;
+	line-height: 1.8;
+}
+
+.pictureCards{
+	display: flex;
+	column-gap: 40px;
+	row-gap: 80px;
+	flex-wrap: wrap;
+}
+
+.flexBox {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	column-gap: 40px;
+	max-width:500px;
+	margin: 0 auto;
+	box-shadow: 10px 5px 5px rgba(0,0,0,0.2),0 5px 5px rgba(0,0,0,0.2);
+}
+
+.flexTitle{
+	font-size: 30px;
+}
+
+img{
+	border-radius: 7px;
+}
+
+/* Footer */
+
+footer { 
+	background-color: black;
+	width: 100%;
+	padding-bottom: 90px;
+}
+
+.footerContent {
+	padding: 0px 30px;
+}
+
+footer a{
+	float: right;
+	color: #CCD1D1;
+	padding: 30px 30px;
+	text-decoration: none;
+	transition: color .2s;
+}
+ 
+
 footer a:hover {
 	color: white;
 }
 
-#csuLogo {
-	max-height: 100%;
-	max-width: 100%;
-	width: 500px;
-	height: 70px;
-	padding-top: 20px;
-	background: url('csulogo.png') no-repeat scroll center center transparent;
-	background-size: cover;
-	float: left;
+
+/* Media Query for Screen Size */
+
+@media screen and (max-width: 1300px) {
+	.navigationLinks {
+		display: none;
+		size: 0;
+	} 
+	.hamburger {
+		display: block;
+	}
+	.flexBox {
+		flex-direction: column;
+	}
+	.flexBoxR {
+		flex-direction: column-reverse;
+	}
 }
