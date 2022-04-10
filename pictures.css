@@ -154,6 +154,11 @@ h2 {
 
 .flexTitle{
 	font-size: 30px;
+	padding: 0px 10px;
+}
+
+.flexParagraph {
+	padding: 0px 10px;
 }
 
 img{
