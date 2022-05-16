@@ -124,7 +124,7 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+    font-size: 20px;
 	padding: 70px 10% 50px;
 	background-color: white;
 	color: black;
@@ -140,6 +140,11 @@ h2 {
 	column-gap: 40px;
 	row-gap: 80px;
 	flex-wrap: wrap;
+}
+
+.demo {
+	text-align: center;
+	padding-bottom: 80px;
 }
 
 .flexBox {

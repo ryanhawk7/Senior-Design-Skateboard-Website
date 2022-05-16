@@ -11,6 +11,7 @@
 	position: fixed; 
 	top: 0; 
 	width: 100%; 
+	z-index: 1;
 }
 
 .navBarContent {
@@ -71,7 +72,6 @@
 	right: 0px;
 	min-width: 160px;
 	background-color: black;
-
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -132,7 +132,7 @@ h2 {
 .timeLine{
 	background-color: white;
 	position: relative;
-	z-index: -2;
+	z-index: 0;
 }
 
 table{
@@ -145,6 +145,8 @@ td {
 	padding: 10px;
 	text-align: left;
 }
+
+
 
 .arrow-right {
 	width: 0; 

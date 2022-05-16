@@ -11,6 +11,7 @@
 	position: fixed; 
 	top: 0; 
 	width: 100%; 
+	z-index: 3;
 }
 
 .navBarContent {
@@ -172,6 +173,7 @@ h2 {
 	-moz-transition: .2s ease-in-out;
 	-o-filter: grayscale(100%); 
 	-o-transition: .2s ease-in-out;
+	z-index: 2;
 }
 
 #linkedIn:hover {
